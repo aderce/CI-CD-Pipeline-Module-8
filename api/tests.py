@@ -6,4 +6,4 @@ class HelloViewTests(APITestCase):
         response = self.client.get('/api/hello/')
 
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.data, {'message': 'Hello, you.'})
+        self.assertEqual(response.data, {'message': 'Hello, you.', 'status': 'nuh uh.'})
